@@ -23,6 +23,10 @@
 header, section {
   text-align: center;
 }
+.container {
+  display: flex;
+  justify-content: center;
+}
 ul li {
   text-align: center;
   list-style-type: none;
