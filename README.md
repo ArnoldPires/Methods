@@ -30,28 +30,47 @@ console.log(length)
 ```
 
 ##### every Method
-Returns a boonlean value to let you know if your function passes a test depending on your provided function. 
+Returns a boonlean value depending on your function. It detects if every element in your array passes the condition you set it too. 
 **Example One:** 
 ```
-
+let books = read.every((element, index) => {
+    return element.reading.length >= 2
+})
+console.log(books)
 ```
 **Example Two:** 
 ```
-
+let birthdays = [30, 50, 40, 20, 10, 70]
+function birthdayParties(parties) {
+    return parties > 60
+}
+console.log(birthdays.every(birthdayParties))
+//Answer = False
 ```
 **Example Three:** 
 ```
-
+let captainPlanet = ['fire', 'wind', 'earth', 'water', 'heart']
+function noHeart(captain) {
+    return captain === 'heart'
+}
+console.log(captainPlanet.every(noHeart))
+//Answer = false
 ```
 ##### filter Method
 Creates a new array with elements that fall under the criteria from an already exisiting array. This does not change the original array.
 **Example One:** 
 ```
-
+let ages = [15, 24, 56, 17, 19, 44, 36]
+let canVote = ages.filter((vote) => vote > 18)
+console.log(canVote)
+//Answer = [24, 56, 19, 44, 36]
 ```
 **Example Two:** 
 ```
-
+let ages = [16, 17, 18, 19, 21, 22, 25, 67]
+let drinkingAge = ages.filter((drink) => drink > 20)
+console.log(drinkingAge)
+//Answer = [21, 22, 25, 67]
 ```
 **Example Three:** 
 ```
