@@ -74,7 +74,9 @@ console.log(drinkingAge)
 ```
 **Example Three:** 
 ```
-
+let pizzaToppings = ['Pepperoni', 'Onions', 'Bacon', 'Sausage', 'Mushrooms', 'Pineapple', 'Extra cheese'] 
+pizzaToppings.filter(element => element.length < 8)
+//Answer = ['Onions', 'Bacon', 'Sausage']
 ```
 ##### forEach Method
 Performs a function for each element in an array. It kinda works as another way of creating a for loop. This doesn't affect the original array. 
@@ -86,42 +88,63 @@ let name = names.forEach (element => console.log(element.concat(' is awesome!'))
 ```
 **Example Two:** 
 ```
-
+const lookAtAllTheseNumbers = [35353, 67567856, 678634534, 689845322, 32423567970, 1232156678646354, 676, 0, 1 , 2, 5]
+lookAtAllTheseNumbers.forEach(element => console.log(element))
+//Answer = [35353, 67567856, 678634534, 689845322, 32423567970, 1232156678646354, 676, 0, 1 , 2, 5]
 ```
 **Example Three:** 
 ```
-
+ let theKids = ['Jordan', 'Lelia', 'Ethan', 'Angelisse']
+ theKids.forEach((element, index, kids) => {
+     kids[index] = element + " Is ready for school"
+ })
+ console.log(theKids)
 ```
 ##### includes Method
 Checks a function to see if it "includes" a value that might have been passed into an already exisiting array. 
 **Example One:** 
 ```
-
+const randomWords = ['dollar', 'pills', 'paper', 'phone']
+console.log(randomWords.includes('pills')) //True
+console.log(randomWords.includes('whatTheFreak')) //false
 ```
 **Example Two:** 
 ```
-
+let peterPiper = ["Peter Piper picked a peck of pickeled peppers"]
+let didPeterPiperPeckedAPickeledPeppers = peterPiper.includes("Peter Piper picked a peck of pickeled peppers")
+console.log(didPeterPiperPeckedAPickeledPeppers)
+//Answer = True
 ```
 **Example Three:** 
 ```
-
+const maskMandate = ["I do not have a mask"]
+const doYouHaveAMask = maskMandate.includes("I do have a mask")
+console.log(doYouHaveAMask)
+//Answer = false
 ```
 ##### pop Method
 Removes the last element of an array.
 **Example One:** 
 ```
-
+let dryEraceMarkers = ["red", "blue", "green", "pink", "black"]
+console.log(dryEraceMarkers.pop())
+//Answer = "black" is removed
 ```
 **Example Two:** 
 ```
-
+let randomNumbers = [54645, 275765, 3567560, 43450, 53530]
+let removeTheLastNumber = randomNumbers.pop()
+console.log(removeTheLastNumber )
+//Answer = 53530 is removed from the array
 ```
-**Example Three:** 
+**Example Three:**  
 ```
-
+let money = ['OneDollarBill', 'FiveDollarBill', 'TenDollarBill', 'TwentyDollarBill']
+console.log(money.pop())
+//Answer = TwentyDollarBill was removed from the array
 ```
 ##### push Method
-Adds either one or more element to an existing array.
+Adds either one or more elements to an existing array.
 **Example One:** 
 ```
 
