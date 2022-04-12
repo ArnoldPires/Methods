@@ -42,10 +42,12 @@ h1 {
   text-align: center;
 }
 .container {
+  font-size: 2.5rem;
+}
+div {
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 2.5rem;
 }
 ol li {
   font-size: 2.2rem;
