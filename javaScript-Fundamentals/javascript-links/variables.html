@@ -11,10 +11,71 @@
 	<body>
     <h1>Variables</h1>
     <section class="container">
+			<div>
+				<h4>Most of the time JavaScript needs to work with information. Examples:</h4>
+				<p><strong>A shoe store:</strong> The information would include shoes being sold and a shopping cart.</p>
+				<p><strong>Social app:</strong>Users, messages, inbox, profile, etc.</p>
+				<h4>Variables are used to store this information. Also called "Named storage."</h4>
+				<p>Use <strong>"let"</strong> most of the time, but use <strong>"const"</strong> when declaring a constant (unchanging) variable.</p>
+			</div> 
+			<div>
+				<p>let message;</p>
+				<p>message = 'Hello';</p>
+				<span>(The string 'Hello' is being stored in the variable named message.)</span>
+				<p>alert(message)</p>
+				<button id="seeMessage">Show Message</button>
+			</div>
+			<div>
+				<h4>Multiple variables in one line:</h4>
+				<p>let user = 'Name', age = Number, message = Birthday Message</p>
+				<button class="arnold">Show Message</button>
+			</div>
+			<div>
+				<h4>OR</h4>
+				<p>let user = 'Name';</p>
+				<p>let age = Number;</p>
+				<p>let message = Birthday Message;</p>
+				<button class="arnold">Show Message</button>
+			</div>
+			<div>
+				<h4>OR</h4>
+				<p>let user = 'Name',</p>
+				<p>age = Number,</p>
+				<p>message = Birthday Message;</p>
+				<button class="arnold">Show Message</button>
+			</div>
+			<div>
+				<h4>Combine two variables into each other:</h4>
+				<p>let hello = "Hello";</p>
+				<p>let message = " World!";</p>
+				<p>alert(hello + message)</p>
+				<button id="hm">Show Message</button>
+			</div>
+			<section class="tasks">
+				<h2>Tasks:</h2>
+				<div>
+				<h4>Working with Variables:</h4> 
+				<ol>
+					<li>Declare two variables: admin and name</li>
+					<li>Assign the value "John" to name</li>
+					<li>Copy the value from name to admin</li>
+					<li>Show the value of admin using alert (must output “John”).</li>
+				</ol>
+				<button id="john">Show Answer</button>
+			</div>
+			<div>
+				<h4>Giving the right name:</h4> 
+				<ol>
+					<li>Create a variable with the name of our planet. How would you name such a variable? <button id="nameOfPlanet">Show Answer</button></li>
+					<li>Create a variable to store the name of a current visitor to a website. How would you name that variable?<button id="nameOfUser">Show Answer</button></li>
+				</ol>
+			</div>
+			</section>
     </section>
     <footer>
       <p class="copyright">Copyright &copy; <span class="year">2027</span> by Arnaldo Pires</p>
     </footer>
 	</body>
 	<script type="text/javascript" src="../js/main.js"></script>
+	<script type="text/javascript" src="../js/variables.js"></script>
 </html>
