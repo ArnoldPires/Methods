@@ -4,6 +4,7 @@ function showNumber() {
   message = 123456789;
   alert(whatsYourNumber + message)
 }
+
 document.querySelector('#string').addEventListener("click", showString);
 function showString() {
   let stringOne = "Hello I am a string,";
